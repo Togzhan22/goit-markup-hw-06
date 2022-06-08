@@ -66,14 +66,15 @@
                 <p class="title-form">
                   Оставьте свои данные, мы вам перезвоним
                 </p>
-                <label for="name" class="contact-label">Имя</label>
+                <label for="name" class="contact-label">Имя
                 <input
                   type="text"
                   class="contact-form-input"
                   name="user_name"
                   required
                 />
-                <label for="phone" class="contact-label">Телефон</label>
+              </label>
+                <label for="phone" class="contact-label">Телефон
                 <input
                   type="tel"
                   class="contact-form-input"
@@ -82,6 +83,7 @@
                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                   title="xxx-xxx-xx-xx"
                 />
+              </label>
                 <label for="mail" class="contact-label">Почта</label>
                 <input
                   type="email"
@@ -89,21 +91,20 @@
                   name="user_email"
                   required
                 />
-                <label for="comment" class="contact-label">Комментарий</label>
+              </label>
+                <label for="comment" class="contact-label">Комментарий
                 <textarea
                   class="contact-form-message"
                   name="user_comment"
                   placeholder="Введите текст"
-                ></textarea>
-
-                <label>
+                ></textarea></label>                
                   <input
                     type="checkbox"
                     class="contact-form-radio"
                     name="agreement"
-                  />Соглашаюсь с рассылкой и принимаю
-                  <a href="">Условия договора</a>
-                    </label>
+                  />
+                  <label> Соглашаюсь с рассылкой и принимаю
+                    <a href="">Условия договора</a></label>
                     <button type="submit" class="contact-form-btn">
                   Отправить
                 </button>
@@ -461,13 +462,14 @@
                 </div>
                 <div class="footer-mailing">
                     <h3 class="footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-                    <input type="email" class="mail" placeholder="E-mail" name="mail" required />
-                    <button type="submit" class="subscribe">
-            Подписаться
-            <svg class="send-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
-          </button>
+                    <form class="mailing">
+                        <input type="email" class="mail" placeholder="E-mail" name="mail" required />
+                        <button type="submit" class="subscribe">
+              Подписаться
+              <svg class="send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
                 </div>
             </div>
         </footer>
